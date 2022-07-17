@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="91.847">
+<testcase classname="Genarate Invoice" name="Genarate Invoice From Approved Quote" time="90.772">
+<failure message="expected:&lt;[15.00]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given as a user i should be able signed in to system using email "bhagya727@gmail.com" and password "bhagyaxero@727".passed
+And I can do two factor auth giving answers as "Dineth" and "QA engineer in xero" and "mazda".passed
+When I should be able to create new quote...................................passed
+And Enter contact data as "Xero" and Item as "Golf balls - white 3-pack"....passed
+And Verify display subtotal as "15.00" and total GST as "2.25" and Total as "17.25".passed
+And Send quote and verify subtotal as "15.00" and total GST as "2.25" and Total as "17.25".failed
+Then Accept the quote and create invoice....................................skipped
+And Verify data displayed in the invoice subtotal as "15.00" and GST presentage as "15.00%" and total GST as "2.25" and Total as "17.25".skipped
+And save the invoice as draft...............................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[15.00]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.xero.teststeps.QuoteSteps.send_quote_and_verify_subtotal_as_and_total_gst_as_and_total_as(QuoteSteps.java:46)
+	at ✽.Send quote and verify subtotal as "15.00" and total GST as "2.25" and Total as "17.25"(file:///C:/aNewZ%20Xero%20Latest/XeroUIAutomationAssignment/XeroUIAutomationAssignment/src/test/resources/features/draft_invoice_creation.feature:13)
+]]></failure>
+</testcase>
+</testsuite>
